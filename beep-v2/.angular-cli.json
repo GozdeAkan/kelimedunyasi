@@ -1,0 +1,150 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "beep-v2"
+  },
+  "apps": [{
+      "name": "beep test app",
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "../src/assets/vendor/bootstrap/css/bootstrap.min.css",
+        "../src/assets/vendor/owl-carousel2/assets/owl.carousel.min.css",
+        "../src/assets/vendor/owl-carousel2/assets/owl.theme.default.min.css",
+        "../src/assets/vendor/semantic-ui/dist/components/transition.min.css",
+        "../src/assets/css/select2-bootstrap.min.css",
+        "../src/assets/css/flexbox-aligner.css",
+        "../src/assets/css/awesome-bootstrap-checkbox.css",
+        "../src/assets/vendor/ng2-toasty/toastr.css",
+        "../src/assets/vendor/ng2-slim-loading-bar/style.css",
+        "../src/assets/vendor/flexiblegs/flexiblegs-css.min.css",
+        "../src/assets/vendor/semantic-ui/dist/components/sidebar.min.css",
+        "../src/assets/vendor/ladda/ladda.min.css",
+        "../src/assets/vendor/datetimepicker/css/bootstrap-datetimepicker.css",
+        "../src/assets/css/style.css",
+        "../src/assets/css/ui-dropdown.css",
+        "../src/assets/css/fontawesome.css",
+        "../src/assets/css/whatsapp.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/moment/min/moment.min.js",
+        "../src/assets/vendor/datetimepicker/js/moment-with-locales.min.js",
+        "../src/assets/vendor/datetimepicker/js/bootstrap-datetimepicker.min.js",
+        "../src/assets/js/init.js",
+        "../src/assets/vendor/menuzord/menuzord.js",
+        "../src/assets/vendor/semantic-ui/dist/components/sidebar.min.js",
+        "../src/assets/vendor/semantic-ui/dist/components/dropdown.min.js",
+        "../src/assets/vendor/semantic-ui/dist/components/transition.min.js",
+        "../src/assets/vendor/sticky/jquery.sticky.min.js",
+        "../src/assets/vendor/select2/select2.full.min.js",
+        "../src/assets/vendor/owl-carousel2/owl.carousel.min.js",
+        "../src/assets/js/track-uat.js",
+        "../src/assets/js/whatsapp.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts",
+        "uat": "environments/environment.uat.ts"
+      }
+    },
+    {
+      "name": "beep prod app",
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "../src/assets/css/fontawesome.css",
+        "../src/assets/vendor/bootstrap/css/bootstrap.min.css",
+        "../src/assets/vendor/owl-carousel2/assets/owl.carousel.min.css",
+        "../src/assets/vendor/owl-carousel2/assets/owl.theme.default.min.css",
+        "../src/assets/vendor/semantic-ui/dist/components/transition.min.css",
+        "../src/assets/css/select2-bootstrap.min.css",
+        "../src/assets/css/flexbox-aligner.css",
+        "../src/assets/css/awesome-bootstrap-checkbox.css",
+        "../src/assets/vendor/ng2-toasty/toastr.css",
+        "../src/assets/vendor/ng2-slim-loading-bar/style.css",
+        "../src/assets/vendor/flexiblegs/flexiblegs-css.min.css",
+        "../src/assets/vendor/semantic-ui/dist/components/sidebar.min.css",
+        "../src/assets/vendor/ladda/ladda.min.css",
+        "../src/assets/vendor/datetimepicker/css/bootstrap-datetimepicker.css",
+        "../src/assets/css/style.css",
+        "../src/assets/css/ui-dropdown.css",
+        "../src/assets/css/whatsapp.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/moment/min/moment.min.js",
+        "../src/assets/vendor/datetimepicker/js/moment-with-locales.min.js",
+        "../src/assets/vendor/datetimepicker/js/bootstrap-datetimepicker.min.js",
+        "../src/assets/js/init.js",
+        "../src/assets/vendor/menuzord/menuzord.js",
+        "../src/assets/vendor/semantic-ui/dist/components/sidebar.min.js",
+        "../src/assets/vendor/semantic-ui/dist/components/dropdown.min.js",
+        "../src/assets/vendor/semantic-ui/dist/components/transition.min.js",
+        "../src/assets/vendor/sticky/jquery.sticky.min.js",
+        "../src/assets/vendor/select2/select2.full.min.js",
+        "../src/assets/vendor/owl-carousel2/owl.carousel.min.js",
+        "../src/assets/js/track.js",
+        "../src/assets/js/whatsapp.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts",
+        "uat": "environments/environment.uat.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [{
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
