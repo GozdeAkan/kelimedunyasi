@@ -22,13 +22,6 @@ export class HomePage {
      this.items = res;
      console.log(this.items);
    });
-
-
  }
-
-
-}
-
- 
 
 }

@@ -6,7 +6,9 @@
 
 <ion-content class="card-background-page">
 
-  
+  <ion-select placeholder="Select" [(ngModel)]="selected">
+    <ion-option *ngFor="let item of items" value="item">{{item.country}}</ion-option>
+</ion-select>
   <!-- <ion-card>
     <img src="assets/imgs/kelime.png"/>
     <div class="card-title">São Paulo</div>

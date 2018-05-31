@@ -4,8 +4,10 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { MyFavoritePage } from '../pages/my-favorite/my-favorite';
 import { HomePage } from '../pages/home/home';
+import { SearchPage } from '../pages/search/search';
+import { TopRatedPage } from '../pages/top-rated/top-rated';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -19,8 +21,10 @@ import { AngularFirestore } from 'angularfire2/firestore';
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
     HomePage,
+    MyFavoritePage,
+    TopRatedPage,
+    SearchPage,
     TabsPage
   ],
   imports: [
@@ -33,8 +37,10 @@ import { AngularFirestore } from 'angularfire2/firestore';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
+    MyFavoritePage,
     HomePage,
+    TopRatedPage,
+    SearchPage,
     TabsPage
   ],
   providers: [
