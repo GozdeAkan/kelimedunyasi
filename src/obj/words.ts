@@ -5,7 +5,8 @@ export class Words{
     word: string;
     description: string;
     country:string;
-    date:DateTime;
+    publishedDate:DateTime;
+    uploadDate:DateTime;
     active:boolean;
 
 }
