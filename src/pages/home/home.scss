@@ -1,32 +1,131 @@
-.card-background-page {
+*, *:before, *:after {
+  
+}
 
-        ion-card {
-          position: relative;
-          text-align: center;
-        }
-      
-        .card-title {
-          position: absolute;
-          top: 15%;
-          font-size: 2.0em;
-          width: 100%;
-          font-weight: bold;
-          color: #fff;
-        }
-      
-        .card-subtitle {
-          font-size: 1.0em;
-          position: absolute;
-          top: 30%;
-          width: 100%;
-          color: #fff;
-        }
-        .card-bottomtitle {
-          font-size: 1.0em;
-          position: absolute;
-          bottom: 5%;
-          //width: 20%;
-          right: 10%;
-          color: rgb(8, 8, 8);
-        }
-      }
+$col-text: #686e74;
+$shadow-col: #aac1c7;
+
+$section-width: 80vw;
+$section-max-width: 64rem;
+
+$card-width: 100%;
+$card-height: 22.5rem;
+
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-bottom-center() {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+html, body {
+  font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
+
+
+}
+
+.forhtml {
+  background: radial-gradient(circle at bottom, #aac1c7, #f7fbfb 80%) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  color: $col-text;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+section {
+ width: 95%;
+ margin: auto;
+
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  padding-top: 10vh;
+
+ 
+  &:after {
+    content: "";
+    display: block;
+    height: .3rem;
+    width: 5.4rem;
+
+    background-color: #fbcd8a;
+    transform: translate(.3rem, 2rem);
+
+  }
+}
+
+.cards {
+  // padding-top: 1.5rem;
+
+  // display: flex;
+  // justify-content: space-between;
+
+  
+}
+
+.card {
+  width: $card-width;
+  height: $card-height;
+  margin-top: 15px;
+  background-color: #f9fbfb;
+  border-radius: 6px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  color: #111111;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  
+  box-shadow: 0 1rem 3rem $shadow-col;
+
+
+  &__svg-wrapper {
+    width: 8rem;
+  }
+
+  &__count-container {
+    flex-grow: 1;
+    //@include flex-center();
+  }
+
+
+
+  &__stuff-container {
+    margin: 0 auto;
+    width: 90%;
+    height: 15%;
+    border-top: 2px solid #e7edef;
+    @include flex-center();
+  }
+
+
+  &__stuff-icon {
+    width: 2rem;
+    height: 2rem;
+    transform: translate(0, -.3rem);
+  }
+
+  &__stuff-text {
+   
+  }
+
+  
+
+  
+
+}
